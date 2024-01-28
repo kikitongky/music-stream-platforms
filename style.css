@@ -67,8 +67,6 @@ body{
     transition: all .3s ease;
 }
 
-/* .container .sidebar .logo:hover a,
-.container .sidebar .logo:hover i, */
 .container .sidebar .menu ul li:hover a,
 .container .sidebar .menu ul li:hover i{
     color: #1db954;
@@ -108,6 +106,7 @@ body{
     gap: 10px;
     color: #fff;
     font-size: 12px;
+    margin-top: 10px;
 }
 
 .container .sidebar .playing .top img{
@@ -128,11 +127,18 @@ body{
     transition: all .3s ease;
 }
 
+.container .sidebar .playing .bottom:hover p{
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
 .container .sidebar .playing .bottom:hover i,
 .container .sidebar .playing .bottom:hover p{
     color: #919191;
 }
 
+
+/* Main */
 .container main{
     padding: 20px 36px;
 }
@@ -177,6 +183,262 @@ body{
     border: none;
     outline: none;
     color: #fff;
-
-
 }
+
+.container main .trending {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;    
+}
+
+.container main .trending .left .info{
+    margin-top: 10px;
+    padding: 26px;
+}
+
+.container main .trending .left .info h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.container main .trending .left .info h4,
+.container main .trending .left .info h5{
+    display: inline;
+}
+
+.container main .trending .left .info h5{
+    margin-left: 12px;
+    color: #919191;
+    font-weight: 500;
+}
+
+.container main .trending .left .info .button{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.container main .trending .left .info .button button{
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    background-color: #16883e;
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.container main .trending .left .info .button i{
+    color: #16883e;
+    font-size: 20px;
+    border: 2px solid #16883e;
+    border-radius: 50%;
+    padding: 4px;
+    transition: all .3s ease;
+}
+
+.container main .trending .left .info .button i:hover{
+    color: #1db954;
+    border-color: #1db954;
+}
+
+.container main .trending .left .info .button button:hover{
+    background-color: #1db954;
+}
+
+.container main .trending img{
+    width: 300px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+}
+
+.container main .trending img:hover{
+    border: 1px solid #464748;
+}
+
+.container main .playlist{
+    margin-top: 14px;
+    display: flex;
+    gap: 15px;
+}
+
+.container main .playlist .genres{
+    color: #fff;
+    background-color: #18181d;
+    padding: 18px;
+    border-radius: 8px;
+    width: 40%;
+}
+
+.container main .playlist .genres .header,
+.container main .playlist .music-list .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container main .playlist .genres .header a,
+.container main .playlist .music-list .header a{
+    color: #919191;
+    font-weight: 600;
+    font-size: 12px;
+    transition: .3s ease;
+}
+
+.container main .playlist .genres .header a:hover,
+.container main .playlist .music-list .header a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Genre Section */
+.container main .genres .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.container main .genres .items .item{
+    padding: 18px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+
+.container main .genres .items .item p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.container main .genres .items .item:nth-child(1){
+    background: #642d8a;
+}
+.container main .genres .items .item:nth-child(2){
+    background: #207a50;
+}
+.container main .genres .items .item:nth-child(3){
+    background: #173f74;
+}
+.container main .genres .items .item:nth-child(4){
+    background: #690505;
+}
+.container main .genres .items .item:nth-child(5){
+    background: #917704;
+}
+.container main .genres .items .item:nth-child(6){
+    background: #644c6b;    
+}
+
+.container main .genres .items .item:nth-child(1):hover{
+    background: #823bb4;
+}
+.container main .genres .items .item:nth-child(2):hover{
+    background: #259e66;
+}
+.container main .genres .items .item:nth-child(3):hover{
+    background: #2057a0;
+}
+.container main .genres .items .item:nth-child(4):hover{
+    background: #830303;
+}
+.container main .genres .items .item:nth-child(5):hover{
+    background: #af9004;
+}
+.container main .genres .items .item:nth-child(6):hover{
+    background: #926f9c;    
+}
+
+
+
+.container main .playlist .music-list{
+    background-color: #18181d;
+    padding: 18px;
+    border-radius: 8px;
+    width: 65%;
+    color: #fff;
+}
+
+.container main .playlist .music-list .items .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 2px 8px;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+
+.container main .playlist .music-list .items .item:hover{
+    background-color: #323232;
+}
+
+.container main .playlist .music-list .items .item:last-child{
+    margin-bottom: 0;
+}
+
+.container main .playlist .music-list .items .item .info,
+.container main .playlist .music-list .items .item .actions{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.container main .playlist .music-list .items .item .info p{
+    font-size: 12px;
+    color: #919191;
+    font-weight: 700;
+    margin-top: 3px;
+}
+
+.container main .playlist .music-list .items .item .info img{
+    width: 45px;
+    height: 45px;
+}
+
+.container main .playlist .music-list .items .item .actions p{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.container main .playlist .music-list .items .item .actions .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #323232;
+    border: 2px solid #464748;
+    border-radius: 50%;
+    padding: 4px;
+    transition: all .3s ease;
+}
+
+.container main .playlist .music-list .items .item .actions .icon i{
+    font-size: 10px;
+    color: #1db954;
+}
+
+.container main .playlist .music-list .items .item .actions .icon:hover{
+    border: 2px solid #1db954;
+}
+
+.container main .playlist .music-list .items .item .actions i{
+    font-size: 18px;
+    color: #919191;
+    transition: all .3s ease;
+}
+
+.container main .playlist .music-list .items .item .actions > i:hover{
+    color: #fff;
+}
+
+
